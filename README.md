@@ -38,7 +38,7 @@ Together, these labs demonstrate how password-protected documents can be assesse
 | [Networkwalks Hash Calculator](https://networkwalks.com/hash-calculator/) | Browser-based tool to extract the `$pdf$...` hash from a locked PDF |
 | [Networkwalks Password Cracker](https://networkwalks.com/password-cracker/) | Browser-based dictionary attack tool |
 | Notepad | Used to store the extracted hash in `.txt` format for JTR/Johnny |
-| Adobe Acrobat Reader DC | Used to verify the recovered password by opening the PDF |
+| WPS | Used to verify the recovered password by opening the PDF |
 
 ## 🧠 Skills Demonstrated
 - Password hash extraction from protected PDF documents
