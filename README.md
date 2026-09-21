@@ -38,7 +38,7 @@ Together, these labs demonstrate how password-protected documents can be assesse
 | [Networkwalks Hash Calculator](https://networkwalks.com/hash-calculator/) | Browser-based tool to extract the `$pdf$...` hash from a locked PDF |
 | [Networkwalks Password Cracker](https://networkwalks.com/password-cracker/) | Browser-based dictionary attack tool |
 | Notepad | Used to store the extracted hash in `.txt` format for JTR/Johnny |
-| WPS | Used to verify the recovered password by opening the PDF |
+| Adobe Acrobat Reader | Used to verify the recovered password by opening the PDF |
 
 ## 🧠 Skills Demonstrated
 - Password hash extraction from protected PDF documents
@@ -53,22 +53,39 @@ Together, these labs demonstrate how password-protected documents can be assesse
 **Module 1 – John the Ripper / Johnny**
 1. Downloaded and installed John the Ripper and Johnny on a Windows PC.
 
+<img width="1533" height="690" alt="downloading john the ripper" src="https://github.com/user-attachments/assets/105bd62f-51e8-4637-84b2-38e9c325cffb" />
 
+<img width="1345" height="488" alt="GUI Johnny" src="https://github.com/user-attachments/assets/5415ef43-4771-4e42-bec2-ca5f5636bd75" />
 
 2. Uploaded the locked PDF to an online PDF Hash Extractor to generate a `$pdf$...` hash.
+
 3. Copied the hash and saved it into a text file (`hash1.txt`), ensuring no extraneous characters were included.
 4. Configured Johnny to point to the `john.exe` executable.
 5. Opened the saved hash file in Johnny via **Open password file**.
 6. Launched a dictionary attack using **Start new attack**.
+   <img width="864" height="682" alt="cracking started" src="https://github.com/user-attachments/assets/154359d2-a82b-46bd-8966-1764146c8127" />
+
 7. Retrieved the cracked password and used it to unlock the PDF in Adobe Acrobat Reader.
+   <img width="825" height="693" alt="successful cracking" src="https://github.com/user-attachments/assets/8a480fbc-29bb-48c2-9aab-c6ee451afb8e" />
+
 
 **Module 2 – Networkwalks Hash Calculator & Password Cracker**
 1. Downloaded the same locked PDF file from the lab page.
-2. Uploaded it to the Networkwalks Hash Calculator, which parses the file locally in-browser and outputs a pdf2john/hashcat-compatible hash.
+2. Uploaded it to the Networkwalks Hash Calculator, which parses the file locally in-browser and outputs a pdf2john/hashcat-compatible hash. <img width="884" height="461" alt="locked pdf uploaded into networkwalk tool" src="https://github.com/user-attachments/assets/1105cfd8-97d4-45fd-b440-8309e47d1837" />
+
 3. Copied the full `$pdf$...` hash value.
+. <img width="840" height="238" alt="cracking" src="https://github.com/user-attachments/assets/76dbafdd-259a-43d4-8b73-491f369fb5aa" />
+
 4. Pasted the hash into the Networkwalks Password Cracker.
+. <img width="804" height="165" alt="hash output" src="https://github.com/user-attachments/assets/a4bce18c-5630-4359-b664-4021e51674d6" />
+
 5. Ran the built-in dictionary attack (100-word wordlist).
+<img width="916" height="289" alt="visible password" src="https://github.com/user-attachments/assets/f7379eed-ff1c-41df-b13b-85a7347e841c" />
+
+   
 6. Retrieved the cracked password and verified it by unlocking the PDF.
+   <img width="978" height="618" alt="password succesful" src="https://github.com/user-attachments/assets/193374b5-6c43-46e6-9547-e6c7c555a1c2" />
+
 
 Both methodologies converged on the same result, validating the hash extraction and confirming the password.
 
