@@ -52,6 +52,9 @@ Together, these labs demonstrate how password-protected documents can be assesse
 ## 🔍 Methodology
 **Module 1 – John the Ripper / Johnny**
 1. Downloaded and installed John the Ripper and Johnny on a Windows PC.
+
+
+
 2. Uploaded the locked PDF to an online PDF Hash Extractor to generate a `$pdf$...` hash.
 3. Copied the hash and saved it into a text file (`hash1.txt`), ensuring no extraneous characters were included.
 4. Configured Johnny to point to the `john.exe` executable.
